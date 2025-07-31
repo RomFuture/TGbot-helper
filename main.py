@@ -72,13 +72,29 @@ def check_button(message):
             bot.reply_to(message, "ПСИХОЛОГИЯ --- ИНФОРМАЦИЯ")
         case "Teorie řízení organizačního systému":
             bot.reply_to(message, "ТРОС --- ИНФОРМАЦИЯ")
-        case "Úvod do principu počítačů":
-            bot.reply_to(message, "УПП --- ИНФОРМАЦИЯ")
-
-
-
-
-
+        case "Informační a komunikační technologie":
+            bot.reply_to(message, "СЕТИ --- ИНФОРМАЦИЯ")
+        case "Matematické základy informatiky":
+            bot.reply_to(message, "ДИСКРЕТКА --- ИНФОРМАЦИЯ")
+        case "Angličtina pro ekonomická studia 1 (B2/C1)":
+            bot.reply_to(message, "АНГЛИЙСКИЙ ДЛЯ ЭКОНОМОВ --- ИНФОРМАЦИЯ")
+        case "Umělá inteligence a její aplikace":
+            bot.reply_to(message, "ИИ --- ИНФОРМАЦИЯ")
+        case "Kvantitativní management":
+            bot.reply_to(message, "МЕНЕДЖМЕНТ --- ИНФОРМАЦИЯ")
+	case "Teorie her a rozhodování":
+            bot.reply_to(message, "ТЕОРИЯ ИГР --- ИНФОРМАЦИЯ")	
+	case "Matematika 2":
+            bot.reply_to(message, "МАТЕМАЦИЯ ДЛЯ РАЗВИТЫХ --- ИНФОРМАЦИЯ")
+	case "Základy marketingu pro informatiky a statistiky":
+            bot.reply_to(message, "ОСНОВЫ МАРКЕТИНГА --- ИНФОРМАЦИЯ")
+	case "Datové minimum":
+            bot.reply_to(message, "ОСНОВЫ АНАЛИТИКИ ДАННЫХ --- ИНФОРМАЦИЯ")
+	case "UX design":
+            bot.reply_to(message, "ИНТЕРФЕЙС --- ИНФОРМАЦИЯ")
+	case "Právo":
+            bot.reply_to(message, "ПРАВО --- ИНФОРМАЦИЯ")
 
 bot.polling()
+
 
