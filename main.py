@@ -32,6 +32,12 @@ reply_keyboard_subject_czu = ReplyKeyboardMarkup(resize_keyboard=True, one_time_
 for item in text_messages.list_sub_czu:
     reply_keyboard_subject_czu.add(item)
 
+
+reply_keyboard_subject_vse = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+for item in text_messages.list_sub_vse:
+    reply_keyboard_subject_vse.add(item)
+
+
 reply_keyboard_univers = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
 for item in text_messages.list_of_universetes:
     reply_keyboard_univers.add(item)
@@ -45,7 +51,7 @@ for item in text_messages.list_of_primers:
 def check_button(message):
     match (message.text):
         case "УНИВЕРСИТЕТЫ":
-            bot.reply_to(message, "Выберете университет:", reply_markup=reply_keyboard_univers)
+            bot.reply_to(message, "Выберите университет:", reply_markup=reply_keyboard_univers)
         case "Создатели":
             bot.reply_to(message, "Создатели")
         case "Добавить свои материалы":
@@ -53,7 +59,7 @@ def check_button(message):
         case "Česká zemědělská univerzita v Praze ČZU":
             bot.reply_to(message, "Česká zemědělská univerzita v Praze ČZU", reply_markup=reply_keyboard_subject_czu)
         case "Vysoká Škola Ekonomická v Praze (VŠE)":
-            bot.reply_to(message, f"{text_messages.vse_vyber}", reply_markup=reply_keyboard_primers)
+            bot.reply_to(message, "Vysoká Škola Ekonomická v Praze (VŠE)", reply_markup=reply_keyboard_subject_vse)
         case "Algoritmizace":
             bot.reply_to(message, "АЛГОРИТМИЗАЦЕ --- ИНФОРМАЦИЯ")
         case "Angličtina ve výpočetní technice - B1":
