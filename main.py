@@ -7,7 +7,7 @@ from telebot.types import ReplyKeyboardMarkup
 import text_messages
 
 bot = TeleBot(token=TOKEN)
-
+bot.remove_webhook()   # или bot.delete_webhook()
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
@@ -88,18 +88,23 @@ def check_button(message):
             bot.reply_to(message, "ИИ --- ИНФОРМАЦИЯ")
         case "Kvantitativní management":
             bot.reply_to(message, "МЕНЕДЖМЕНТ --- ИНФОРМАЦИЯ")
-	case "Teorie her a rozhodování":
-            bot.reply_to(message, "ТЕОРИЯ ИГР --- ИНФОРМАЦИЯ")	
-	case "Matematika 2":
+        case "Teorie her a rozhodování":
+            bot.reply_to(message, "ТЕОРИЯ ИГР --- ИНФОРМАЦИЯ")
+        case "Matematika 2":
             bot.reply_to(message, "МАТЕМАЦИЯ ДЛЯ РАЗВИТЫХ --- ИНФОРМАЦИЯ")
-	case "Základy marketingu pro informatiky a statistiky":
+        case "Základy marketingu pro informatiky a statistiky":
             bot.reply_to(message, "ОСНОВЫ МАРКЕТИНГА --- ИНФОРМАЦИЯ")
-	case "Datové minimum":
+        case "Datové minimum":
             bot.reply_to(message, "ОСНОВЫ АНАЛИТИКИ ДАННЫХ --- ИНФОРМАЦИЯ")
-	case "UX design":
+        case "UX design":
             bot.reply_to(message, "ИНТЕРФЕЙС --- ИНФОРМАЦИЯ")
-	case "Právo":
+        case "Právo":
             bot.reply_to(message, "ПРАВО --- ИНФОРМАЦИЯ")
+        case "НАЗАД В ОСН. МЕНЮ":
+            bot.reply_to(message, "Vysoká Škola Ekonomická v Praze (VŠE)", reply_markup=reply_keyboard_univers)
+        case "НАЗАД В ГЛ. МЕНЮ":
+            bot.reply_to(message, "ВЫБИРЕТЕ КУДА ХОТИТЕ", reply_markup=start_message(message))
+
 
 bot.polling()
 

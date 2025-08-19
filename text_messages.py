@@ -1,6 +1,6 @@
 start_message = "ВВОДНОЕ СООБЩЕНИЕ + ВЫБОР УНИВЕРА"
 
-list_of_universetes = ["Česká zemědělská univerzita v Praze ČZU", "Vysoká Škola Ekonomická v Praze (VŠE)"]
+list_of_universetes = ["Česká zemědělská univerzita v Praze ČZU", "Vysoká Škola Ekonomická v Praze (VŠE)", "НАЗАД В ГЛ. МЕНЮ"]
 
 list_sub_czu = [
     "Algoritmizace",
@@ -13,7 +13,8 @@ list_sub_czu = [
     "Programovací jazyk C++",
     "Psychologie osobnosti a sociální psychologie",
     "Teorie řízení organizačního systému",
-    "Úvod do principu počítačů"
+    "Úvod do principu počítačů",
+    "НАЗАД В ОСН. МЕНЮ"
 ]
 list_sub_vse = [
     "Informační a komunikační technologie",
@@ -27,7 +28,8 @@ list_sub_vse = [
     "Základy marketingu pro informatiky a statistiky",
     "Datové minimum",
     "UX design",
-    "Právo"
+    "Právo",
+    "НАЗАД В ОСН. МЕНЮ"
 ]
 
 list_of_primers = ["Пример1", "Пример2", "Пример3", "Пример4", "Пример5", "Пример6", "Пример7", "Пример8", "Пример9"]
